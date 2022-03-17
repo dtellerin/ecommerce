@@ -1,0 +1,30 @@
+<br>
+<div class="container p-2 mb-5 border-bottom bg-light rounded-5">
+    <div class="jumbotron">
+
+<h1 style="color:blue;">Login de Usuario</h1>
+<br>
+            
+    <form action="sesion/login" method="post">
+           
+        <div class="form-group">
+            <label for="Nombre"><b>Ingrese su Nombre</b></label>
+            <input id="nombre" name='username' placeholder="nombre" class="form-control" type="text" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="Password"><b>Ingrese su clave</b></label>
+            <input id="password" class="form-control" type="password" name="password" placeholder="password" >
+        </div>
+
+    <button class="btn btn-success mt-3 mb-5">Login</button>
+</form>
+    
+    <hr>
+        <div class="text-left">
+            <button class="btn btn-success my-3" onclick="location.href = '/api/sesion/register'" replace>Regitrarse</button>
+        </div>
+    </div>
+</div>
+
+         

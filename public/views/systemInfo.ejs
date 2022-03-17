@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi plantilla de Ingreso de Datos en EJS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1 style="color:blue;">Informacion del sistema</h1>
+            <br>
+            <% const haydatos = Object.keys(datos).length > 0 %>
+            <% if(haydatos){ %>
+            <div class="table-responsive ">
+                <table class="table table-dark">
+                    <tr style="color: greenyellow;"> 
+                        <th>Nombre </th>
+                        <th>Informacion</th>
+                    </tr>
+                    <% for (const dato of Object.keys(datos)) {%>
+                    <tr>
+                        <td><%=dato%></td>
+                        <td><%=datos[dato]%></td>
+                    </tr>
+                    <%};%>
+                </table>
+            </div>
+            <% } else{ %>
+            <h3 class="alert">No hay productos cargados</h3>
+                <% } %>
+            
+        </div>
+    </div>
+</body>
+
+</html>
