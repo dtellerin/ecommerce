@@ -11,8 +11,9 @@ if (tipo == 'CLUSTER') {
     logger.info('Inicio server en modo CLUSTER')
     serverCluster(port)
    
-    } else {
-    enviarMail('dtellerin@hotmail.com', 'Prueba1', 'Inicia Server FORK')
+    } else { 
+
+    //enviarMail('dtellerin@hotmail.com', 'Prueba1', 'Inicia Server FORK')
     logger.info('Inicio server en modo FORK')
     serverFork(port)
 
