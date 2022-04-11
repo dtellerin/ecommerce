@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <%- include('./layouts/head') %>
+    
+<body>
+    
+    <%- include('./mainPage') %>
+
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h3>Ingrese Producto</h3>
+            <table>
+                <tr><td>Codigo:</td><td><input class="form-control" size="50%" type="text" name="codigo" id="codigo"></td></tr>
+                <tr><td>Nombre:</td><td><input class="form-control" type="text" name="nombre" id="nombre"></td></tr>
+                <tr><td>Descripcion:</td><td><input class="form-control" type="text" name="descripcion" id="descripcion"></td></tr>
+                <tr><td>Categoria:</td><td><input class="form-control" type="text" name="categoria" id="categoria"></td></tr>
+                <tr><td>Foto (link /url):</td><td><input class="form-control" type="text" name="foto" id="foto"></tr></td>
+                <tr><td>Precio:</td><td><input class="form-control" type="text" min="1" step="any" name="precio" id="precio"></td></tr>
+                <tr><td>Stock:</td><td><input class="form-control" type="text" name="stock" id="stock"></td></tr>
+            </table>
+            <button class="btn btn-primary mt-3 mb-1" onclick="addProducto()">Agregar Producto</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+        <div id="vistaProductos"></div>
+    </div>
+</body>
+<script src="../js/products.js"></script>
+</html>

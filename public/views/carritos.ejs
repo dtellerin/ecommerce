@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./layouts/head') %>
+    
+<body>
+
+    <%- include('./mainPage') %>
+    <br><br><br>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h3>Crear Carrito</h3>
+            <table>
+                <tr><td>Dirección entrega:</td><td><input class="form-control" size="50%" type="text" name="direccion" id="direccion" required"></td></tr>
+            </table>
+            <button class="btn btn-primary mt-3 mb-1" onclick="addCarrito()">Crear</button>
+        </div>  
+    </div>
+    <div class="container mt-3">
+            <div id="vistaCarritos"></div>
+    </div>
+
+</body>
+<script src="../js/carrito.js"></script>
+</html>
+

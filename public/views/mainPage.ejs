@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de ECommerce</title>
+        <%- include('./layouts/head') %>
+</head>
+
+<body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">eCommerce</a>
+            <div class="d-flex">
+                <a class="nav-link" href="/info">Info</a>
+                <a class="nav-link" href="/api/productos">Productos</a>
+                <a class="nav-link" href="/api/carrito">Carrito</a>
+                <a class="nav-link" href="/api/ordenes">Ordenes</a>
+                <a class="nav-link" href="/api/chat">Chat</a>
+                <a class="nav-link" id="usuario"></a>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+     <script>
+        function logout() {
+            localStorage.removeItem('access_token')
+            localStorage.removeItem('username')
+            location.href ='/api/sesion/login'
+        }
+    </script>
+   </body>
+</html>

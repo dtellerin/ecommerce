@@ -1,0 +1,9 @@
+[2022-04-11T17:14:13.794] [INFO] default - Inicia Server
+[2022-04-11T17:14:13.807] [INFO] default - Servidor Http con Websockets escuchando en el puerto 8080
+[2022-04-11T17:14:39.917] [ERROR] default - Ruta no encontrada /hola
+[2022-04-11T17:18:25.205] [INFO] default - Inicia Server
+[2022-04-11T17:18:25.222] [INFO] default - Servidor Http con Websockets escuchando en el puerto 8080
+[2022-04-11T17:18:50.141] [INFO] default - Se muestra la informacion del sistema
+[2022-04-11T17:19:20.100] [INFO] default - Se muestra la informacion del sistema
+[2022-04-11T17:45:33.171] [INFO] default - Inicia Server
+[2022-04-11T17:45:33.192] [INFO] default - Servidor Http con Websockets escuchando en el puerto 8080
